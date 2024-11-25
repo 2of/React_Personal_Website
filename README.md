@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# It's just a repo for a frontend!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repo is just hte front end for that domain. The CSS in here is a little big all-over-the-place. FWIW this whole thing was written intentionally without using any libs except react-router-dom and some inbuilts.
 
-## Available Scripts
+## About 2of.io
 
-In the project directory, you can run:
+2of.io is a personal website where I curate and display a collection of things that interest me. It's not meant to be a fully polished portfolio, but rather a fun, dynamic collection of web projects, ideas, and other bits of creativity. Think of it as a playful showcase of what I'm passionate about. The whole thing is written by me, just in REACT. Little help from generative AI solutions for the CSS, naturally.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Homer Simpson](./git/homerimage.gif)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Sections
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Personal Profile**: A quick overview of who I am and what I'm currently up to, linkedin but .. worse?
+- **Fun Stuff**: Random, interesting web projects and experiments that I'm working on.
+- **AI**: Cool write up on master's project as well as some other side projects
+- **University Work**: There's some fun stuff in there too! 
+- **Rambles**: Periodically, I'll add blog posts to share my thoughts on different topics, Nobody really cares, but writing is healthy and it's fun to pretend someone reads them
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Technologies Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React (for the front-end interface)
+- Hosted on a *cheap* web server!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**2of.io** cool 3 character domain right?
+(Currently firing off to this github as a redirect)
