@@ -1,0 +1,333 @@
+/* Default nav container */
+
+
+
+
+/* Compact navigation container */
+.navContainer.compact {
+  z-index: 10000;
+
+    transform: scale(0.98);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  /* Wide navigation container */
+  .navContainer.wide {
+    z-index: 10000;
+
+    transform: scale(0.98);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  /* When the containers become active */
+  .navContainer.compact.active,
+  .navContainer.wide.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+.navContainer .Collapsed {
+  transform: scale(10);
+  
+   
+  }
+  .logo{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+  }
+  /* Style for navtype "compact" */
+  .navContainer.compact {
+    width: 90%;
+    display: flex;
+    flex-direction: column; /* Stack everything vertically */
+    align-items: center; /* Center align the items horizontally */
+    padding: 2px;
+    max-width: 350px;
+
+    width: 300px;
+
+    padding: 8px;
+  }
+
+
+  .navContainer.compact .navButtonContainer { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navContainer.navContainer.compact .socialLinksWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center; /* Ensure icons are vertically centered */
+    gap: 10px;
+  }
+  
+ 
+  .navContainer.compact .socialLinks a {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    align-items: center; /* Ensure icon itself is centered inside the link */
+    font-size: 18px;
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+
+
+
+
+
+
+
+  /* WIDE WIDE WIDE */
+
+  .navContainer.wide {
+
+  }
+  .navContainer.wide .navButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-grow: 1;
+    padding: 10px 10px;
+    order: 1;
+  }
+
+
+
+
+
+
+  /* responsive */
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .navContainer.wide {
+      flex-direction: column;
+      position: static; /* Allow it to flow with the page */
+      width: 100%;
+      padding: 10px;
+    }
+    .hamburgerButton{
+      display: block;
+      background-color: red;
+    }
+    .navContainer.wide .navButtonContainer {
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+    .hamburgerButton{
+      background-color: red;
+    }
+    .navContainer.wide .socialLinksWrapper {
+      justify-content: center;
+      order: 3;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Tablet View */
+  @media (max-width: 1024px) {
+    .hamburgerButton{
+      display: none;
+    }
+    .navContainer.wide {
+      display: flex;
+      flex-direction: row;
+        /* border: 1px solid orange; */
+        gap: 10px;
+        padding: 10px;
+      width: 100%;
+      border-radius: 0;
+      position: fixed;
+
+    }
+  
+    .navContainer.wide .navButtonContainer {
+      justify-content: space-between;
+      padding: 8px 0;
+    }
+  }
+  
+
+
+  @media (min-width: 1025px) and (max-width: 1199px) {
+    .hamburgerButton{
+      display: none;
+    }
+    .navContainer.wide {
+      /* Styling for intermediate screen sizes */
+      /* border: 1px solid magenta;
+      bord */
+      border: 1px solid orange;
+      position: fixed;
+      padding: 12px 16px;
+      flex-direction: row;
+      justify-content: space-around;
+      border-radius: 0px;
+      width: 100%;
+    }
+  }
+  
+  /* Large Screens */
+  @media (min-width: 1200px) {
+    .navContainer.wide {
+      .hamburgerButton{
+        display: none;
+      }
+        /* border: 1px solid yellow; */
+        width: auto;
+        display: flex;
+        position: fixed; /* or fixed if you want it to stay on screen when scrolling */
+        /* top: 10px; Adjust this value for the vertical offset */
+        /* left: 25%;  */
+        /* transform: translateX(-50%); Adjust the positioning to truly center the element */
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 12px;
+        padding: 10px 18px;
+        
+        height: 48px;
+    }
+  }
+  
+  
+  .navContainer.wide .navButtonContainer .navButton {
+    display: block;
+
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .navContainer.wide .navButtonContainer .navButton:hover {
+
+  }
+  
+  .navContainer.wide .blurb {
+    display: none;
+  }
+  .navContainer.wide .socialLinksWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center; /* Ensure icons are vertically centered */
+    gap: 4px;
+    order: 2;
+  }
+  
+  .navContainer.wide .socialLinks a {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    align-items: center; /* Ensure icon itself is centered inside the link */
+    font-size: 18px;
+    border: none;
+
+  }
+  
+
+
+
+
+
+
+
+  /* Logo and Title Container */
+  .logoContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Logo Styling */
+  .logo {
+    height: 40px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  /* Title Styling */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Blurb Styling */
+  .blurb {
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    animation: blurbAppear 0.3s ease-out forwards;
+  }
+  
+  @keyframes blurbAppear {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Social Links Section */
+  .socialLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 24px;
+ 
+  }
+  
+  @keyframes socialLinksAppear {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  .circleDot {
+    margin: 10px;
+    font-size: 8px;
+ 
+  }
+
+
+
+
+
+
+
+
+
+/* Responsive queries */
+
+
+.Collapsed {
+  display: none;
+  background-color: red;
+}
+
+.Collapsed.open {
+  display: block; /* or flex depending on your layout */
+}

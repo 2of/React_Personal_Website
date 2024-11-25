@@ -1,0 +1,175 @@
+/* Rambles.module.css */
+.ramblesPage {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.pageHeader {
+    padding: 60px 20px;
+    color: #fff;
+    text-align: center; /* Center the header content */
+    background: var(--header-background); /* Optional: background for header */
+}
+
+.pageTitle {
+    font-size: 48px; /* Larger, modern title */
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase; /* Make the title feel more impactful */
+}
+
+.pageSubtitle {
+    font-size: 22px;
+    margin: 10px 0;
+    font-weight: 300; /* Lighter weight for the subtitle */
+    letter-spacing: 1px;
+}
+
+/* Blog Post Section Styles */
+.blogPosts {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Blog Post Styles */
+.blogPost {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    border-radius: 12px; /* Slightly rounded corners for a modern look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft, subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation on hover */
+    background-color: var(--post-background); /* Background color for posts */
+}
+
+.blogPost:hover {
+    transform: translateY(-5px); /* Slight hover lift effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
+}
+
+/* Light Post - Black text on white background */
+.blogPostLight {
+    background-color: #fff; /* White background */
+}
+
+.blogPostLight .blogPostImage {
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin-right: 30px; /* Larger spacing between image and text */
+}
+
+.blogPostLight .blogPostContent {
+    max-width: 650px;
+}
+
+.blogPostLight .blogPostTitle {
+    font-size: 36px; /* Large, bold title */
+    margin: 0;
+    font-weight: bold;
+}
+
+.blogPostLight .blogPostMeta {
+    font-size: 16px; /* Slightly larger meta for visibility */
+    margin: 12px 0;
+    font-weight: 300;
+    color: var(--meta-color); /* Slightly lighter color for meta data */
+}
+
+.blogPostLight .blogPostDescription {
+    font-size: 18px; /* Larger description for better readability */
+    line-height: 1.8;
+}
+
+/* Dark Post - White text on black background */
+.blogPostDark {
+    background-color: #1a1a1a; /* Dark background */
+    color: #fff; /* Light text for contrast */
+}
+
+.blogPostDark .blogPostImage {
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin-left: 30px; /* Larger spacing between image and text */
+}
+
+.blogPostDark .blogPostContent {
+    max-width: 650px;
+}
+
+.blogPostDark .blogPostTitle {
+    font-size: 36px; /* Large, bold title */
+    margin: 0;
+    font-weight: bold;
+}
+
+.blogPostDark .blogPostMeta {
+    font-size: 16px; /* Slightly larger meta for visibility */
+    margin: 12px 0;
+    font-weight: 300;
+    color: var(--meta-color); /* Slightly lighter color for meta data */
+}
+
+.blogPostDark .blogPostDescription {
+    font-size: 18px; /* Larger description for better readability */
+    line-height: 1.8;
+}
+
+/* Flex direction for alternating image positions */
+.blogPostContentWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.leftImage .blogPostImage {
+    margin-right: 30px;
+}
+
+.rightImage .blogPostImage {
+    margin-left: 30px;
+}
+
+/* Responsiveness for Mobile */
+@media (max-width: 768px) {
+    .blogPosts {
+        padding: 10px;
+    }
+
+    .blogPost {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .blogPostLight .blogPostImage,
+    .blogPostDark .blogPostImage {
+        max-width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .blogPostContent {
+        max-width: 100%;
+    }
+
+    .blogPostTitle {
+        font-size: 28px; /* Smaller title on mobile */
+    }
+
+    .blogPostDescription {
+        font-size: 16px; /* Adjust description for mobile */
+    }
+}

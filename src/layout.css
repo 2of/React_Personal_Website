@@ -1,0 +1,134 @@
+/* Global styles for the layout */
+.layout {
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.layout.compact * {
+  /* border: 1px solid red; */
+}
+.LayoutNavArea {
+}
+.layout .nav,
+.layout .footer {
+  width: 100%;
+}
+
+/* Compact Layout (Nav on the left, content on the right) */
+.layout.compact {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.layout.compact .LayoutContentArea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.layout.compact main {
+  margin-left: 30px; /* Adjust based on the nav width */
+
+  flex-grow: 1;
+}
+
+
+
+
+
+
+
+/* Wide Layout (Navbar at the top, content below) */
+.layout.wide {
+  display: flex;
+  flex-direction: column;
+ 
+  /* background-color: red; */
+}
+
+.layout.wide .LayoutNavArea {
+
+  height: 100px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layout.wide main {
+  flex-grow: 1; /* Ensures main takes up available space */
+  padding: 20px;
+  min-height: 100vh;
+  /* background-color: orange; Example background color */
+  padding-top: 100px;
+}
+
+.layout.wide .footer {
+  background-color: var(--footer-background-color);
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Centered Layout (Navbar centered in the middle of the page) */
+.layout.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.layout.centered .navContainer {
+  /* position: relative; */
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.layout.centered main {
+  display: none; /* No content area for centered layout */
+}
+
+/* Footer styles (same for all layouts) */
+.layout .footer {
+  background-color: var(--footer-background-color);
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  color: var(--footer-text-color);
+}
+
+/* Additional Styling for Nav (used in all layouts) */
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--nav-text-color);
+}
+
+.navContainer a {
+  text-decoration: none;
+  /* margin-bottom: 15px; */
+  font-size: 1rem;
+}
+
+.navContainer a:hover {
+  color: var(--nav-link-hover-color);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.navContainer a:active {
+  transform: scale(1);
+}
+
+/* Variables for easy theme management */

@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arial', sans-serif;
+}
+
+button, .button {
+  font-family: 'Arial', sans-serif;
+}
+
+
+
+:root {
+  /* Colors */
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #d1b33c;
+  --background-glass: rgba(255, 255, 255, 0.6);
+  --glass-border-color: rgba(255, 255, 255, 0.2);
+  --shadow-color: rgba(0, 0, 0, 0.2);
+
+  /* Fonts */
+  --heading-font: 'Poppins', sans-serif;
+  --body-font: 'Arial', sans-serif; /* Updated to Arial */
+  
+  /* Text Effects */
+  --text-glow: 0 0 5px rgba(255, 255, 255, 0.7);
+  
+  /* Other styles (gradients, borders, etc.) */
+  --blur-amount: 32px;
+  --transition-duration: 0.3s;
+  --transition-timing: ease-in-out;
+  --border-color-light: rgba(0, 0, 0, 0.8);
+  --border-color-dark: rgba(255, 255, 255, 0.6);
+}
+
+[data-theme="dark"] {
+  /* Colors */
+  --background-color: #1e1e1e;
+  --text-color: #ffffff;
+  --accent-color: #7cb0db;
+  --background-glass: rgba(30, 30, 30, 0.6);
+  --glass-border-color: rgba(255, 255, 255, 0.1);
+  --shadow-color: rgba(0, 0, 0, 0.6);
+
+  /* Gradients */
+  --gradient-light: linear-gradient(135deg, #2a2a2a 0%, #1e1e1e 100%);
+  --gradient-dark: linear-gradient(135deg, #121212 0%, #000000 100%);
+
+  /* Borders */
+  --border-color-light: rgba(255, 255, 255, 0.1);
+  --border-color-dark: rgba(0, 0, 0, 0.8);
+
+  /* Shadows */
+  --box-shadow-light: 0 4px 16px rgba(255, 255, 255, 0.1);
+  --box-shadow-dark: 0 8px 32px rgba(0, 0, 0, 0.7);
+
+  /* Text Effects */
+  --text-glow: 0 0 10px rgba(0, 170, 255, 0.8);
+}body {
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Set Arial as the default font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+}

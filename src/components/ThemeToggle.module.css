@@ -1,0 +1,94 @@
+/* Container for the theme toggle */
+.toggleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* The switch (checkbox) */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px; /* Reduced width */
+    height: 20px; /* Reduced height */
+  }
+  
+  /* Hide the default checkbox input */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider (the circle) */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--accent-color); /* Accent color for the background */
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  
+  /* The circle inside the slider */
+  .slider:before {
+    position: absolute;
+    content: '';
+    height: 14px; /* Reduced size */
+    width: 14px; /* Reduced size */
+    border-radius: 50%;
+    left: 3px; /* Adjusted for smaller slider */
+    bottom: 3px; /* Adjusted for smaller slider */
+    background-color: var(--background-color); /* White for the circle */
+    transition: 0.4s;
+  }
+  
+  /* When the checkbox is checked, move the circle to the right */
+  input:checked + .slider {
+    /* background-color: var(--shadow-color); Shadow color for the active state */
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px); /* Adjusted for smaller slider */
+    background-color: var(--background-color); /* Circle stays white */
+  }
+  
+  /* Icons */
+  .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.3s ease;
+    font-size: 12px; /* Reduced icon size */
+    color: var(--text-color); /* Text color for the icons */
+  }
+  
+  .icon:nth-child(1) {
+    left: 5px; /* Sun icon (left side) */
+  }
+  
+  .icon:nth-child(2) {
+    right: 5px; /* Moon icon (right side) */
+  }
+  
+  /* Hide the inactive icon */
+  .hidden {
+    opacity: 0;
+  }
+  
+  /* Optional: You can also add a subtle animation to the slider */
+  @keyframes slideIn {
+    0% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .slider {
+    animation: slideIn 0.3s ease-out;
+  }

@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: var(--background-color); /* Use background color from theme */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--text-color); /* Use text color from theme */
+}
+
+.App-link {
+  color: var(--text-color); /* Use text color from theme */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Rambles.module.css */
+.standard_cell {
+  /* Background */
+  background-color: var(--background-color); /* Glassy semi-transparent background */
+
+  /* Typography */
+  color: var(--text-color); /* Text color adapting to theme */
+  font-family: var(--body-font); /* Modern sans-serif font for body text */
+  font-size: 1rem; /* Standard text size */
+  text-align: center; /* Center align text for uniformity */
+
+  /* Effects */
+
+  transition: all var(--transition-duration) var(--transition-timing); /* Smooth transition effects */
+  border: 1px solid var(--border-color-light);
+  border-radius: 12px;
+  transform: scale(0.95);
+  opacity: 1; /* Start with opacity 0 */
+  animation: navbarAppear 0.1s ease-out forwards; /* Animation for appearance */
+  transition: transform 0.1s ease-out, width 0.1s ease, left 0.1s ease, background 0.1s ease;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.standard_button {
+  /* Background */
+  color: var(--text-color); /* Text color adapting to theme */
+  font-family: var(--body-font); /* Consistent modern font */
+  font-weight: 300; /* Lighter font weight for skinny text */
+  display: block;
+  text-align: center;
+  padding: 12px 20px;
+  margin: 5px 0;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  transition: all var(--transition-duration) ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.standard_button:hover {
+  transform: scale(1.05); /* Slight scaling effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Larger shadow for depth */
+  background: rgba(255, 255, 255, 0.3); /* Subtle background color change */
+  color: var(--accent-color); /* Accent color on hover */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Text glow effect */
+}
+
+.standard_monochrome_button {
+  /* Background */
+  color: var(--text-color); /* Text color adapting to theme */
+  font-family: var(--body-font); /* Modern sans-serif font */
+  font-size: 1rem; /* Standard text size */
+  font-weight: 300; /* Lighter font weight for skinny text */
+  text-align: center; /* Center text */
+  padding: 8px 4px; /* Padding for clickable area */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all var(--transition-duration) ease; /* Smooth transition for effects */
+}
+
+.standard_monochrome_button:hover {
+  transform: scale(1.05); /* Slight scaling on hover */
+  color: var(--accent-color); /* Accent color on hover */
+  background-color: rgba(0, 0, 0, 0.3); /* Darker background on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Larger shadow for depth */
+}
+
+.standard_monochrome_button:active {
+  transform: translateY(0); /* Neutralize lift effect on click */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Lighter shadow on active */
+}
+
+/* Inverted Standard Cell */
+.standard_cell_inverted {
+  /* Background */
+  background-color: var(--background-color); /* Light background for inverted variant */
+
+  /* Typography */
+  color: var(--text-color); /* Dark text for inverted variant */
+  font-family: var(--body-font); /* Modern sans-serif font for body text */
+  font-size: 1rem; /* Standard text size */
+  text-align: center; /* Center align text for uniformity */
+
+  /* Effects */
+  opacity: var(--glass-opacity); /* Ensure semi-transparent effect */
+  transition: all var(--transition-duration) var(--transition-timing); /* Smooth transition effects */
+  border: 1px solid var(--border-color-dark); /* Dark border for inverted */
+  border-radius: 8px;
+  transform: scale(0.95);
+  opacity: 0; /* Start with opacity 0 */
+  animation: navbarAppear 0.1s ease-out forwards; /* Animation for appearance */
+  transition: transform 0.1s ease-out, width 0.1s ease, left 0.1s ease, background 0.1s ease;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
