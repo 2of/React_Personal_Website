@@ -1,3 +1,5 @@
+#deprecated#
+
 # 🌟 It's just a repo for a frontend! 🌟
 
 Welcome to the frontend of my personal website! 🚀 This repo contains all the React goodness behind my personal domain **2of.io**. I’ve kept it simple by avoiding fancy libraries—just `react-router-dom` and some built-in magic. ✨
