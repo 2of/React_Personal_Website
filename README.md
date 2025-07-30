@@ -1,4 +1,4 @@
-#deprecated#
+# deprecated #
 
 # 🌟 It's just a repo for a frontend! 🌟
 
